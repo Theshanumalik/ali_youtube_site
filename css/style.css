@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+    line-height: 1.6;
+}
+html{scroll-behavior: smooth;}
+main{
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+header{
+    background-color: tomato;
+    display: flex;
+    width: 100%;
+    text-transform: capitalize;
+    justify-content: space-around;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.logo-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 10px;
+}
+.logo-img img{
+    width: 100%;
+    transform: scale(1.5);
+}
+header nav {
+    display: flex;
+}
+header nav a{
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+}
+header nav a:hover{
+    border-color: white;
+}
+.captionSec{
+    padding: 20px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+}
+.heroText{
+    width: 60%;
+    color: white;
+}
+.heroText h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+.heroText p{
+    font-size: 18px;
+    text-align: center;
+}
+.heroText a{
+    color: white;
+    text-decoration: nne;
+}
+.heroText .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.heroText .btn{
+    color: black;
+}
+.heroText .btn-outline{
+    color: white;
+}
+.btn{
+    width: 200px;
+    background-color: white;
+    border: 1px solid transparent;
+    color: black;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-outline{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.demoVideo{
+    background-color: rgb(28, 40, 51);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.demoVideo p{
+    width: 60%;
+    margin: 10px auto;
+}
+.demoVideo .video{
+    width: 80%;
+    max-width: 750px;
+    overflow: hidden;
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    margin: 0 auto;
+    background-color: gray;
+    /* padding: 10px; */
+}
+.demoVideo iframe{
+    width: 100%;
+    height: 100%;
+}
+.demoVideo .controls{
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.demoVideo .yt-btn{
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+.demoVideo .yt-btn:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.source-code{
+    background-color: #eeeeee;
+}
+.sec-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.source-code .card p{
+    margin: 5px 0;
+}
+.about-sec .sec-container{
+    padding-bottom: 20px;
+}
+.card{
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    width: 300px;
+    margin: 10px;
+}
+.card .card-title{
+    padding: 5px;
+}
+.card .thumbnail{
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+}
+.card .thumbnail img{
+    width: 100%;
+}
+.card .actions{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.sec-container  .card .actions .btn{
+    border: 1px solid black;
+    margin: 5px 0;
+    width: 90%;
+}
+.sec-title{
+    width: 600px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    /* background-color: gray; */
+}
+.sec-container .card .actions .btn:hover{
+    box-shadow: 3px 3px 3px lightgray;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.about-sec{
+    background-color: black;
+    color: white;
+}
+.worker-img{
+    border: 5px solid #fb607f;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+}
+.worker-img img{
+    width: 100%;
+    transition: transform .2s linear;
+    cursor: pointer;
+}
+.worker-img:hover img{
+    transform: scale(1.2);
+}
+.worker-name{
+    color: black;
+    text-align: center;
+}
+.worker-desc{
+    color: black;
+    text-align: center;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+.social-media-handle{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+.social-media-handle i{
+    color: black;
+}
+.contact{
+    background-color: #eeeeee;
+}
+.contact .card{
+    width: 350px;
+}
+.contact .sec-container{
+    align-items: center;
+    justify-content: center;
+}
+.contact .sec-container .contact-text{
+    width: 600px;
+    margin-left: 20px;
+    /* background-color: black; */
+}
+.form-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.form-controls input, textarea{
+    width: 100%;
+    padding: 8px 10px;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    border: 1px solid lightgray;
+    transition: border-color .2s linear;
+}
+.form-controls .btn{
+    background-color: 	#1e90ff;
+    color: white;
+}
+.form-controls .w-40{
+    width: 48%;
+}
+.form-controls input:focus, .form-controls textarea:focus{
+    border-color: #1e90ff;
+}
+.contact .social-media-handle{
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.scrollTop{
+    position: fixed; 
+    right: 0; 
+    top: 60vh; 
+    background-color: white; 
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    box-shadow: 0 0 10px lightgray;
+    text-decoration: none;
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    header nav a{
+        /* background-origin: padding-box; */
+        border: 1px solid transparent;
+    }
+    header nav a:hover{
+        border-color: white;
+    }
+    .captionSec{
+        height: auto;
+    }
+    .demoVideo .video{
+        width: 80%;
+        height: 248px;
+    }
+    .heroText .controls{
+        flex-direction: column;
+    }
+    .heroText .controls .btn{
+        margin: 10px 0;
+    }
+    .source-code .sec-container{
+        justify-content: center;
+    }
+    .card{
+        width: 80%;
+    }
+    .sec-title{
+        width: 100%;
+    }
+    .contact-text{
+        width: 100%;
+    }
+    .scrollTop{
+        display: block;
+    }
+}
